@@ -17,12 +17,12 @@ read -n 1 -s
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-nvm install --lts
-
 wget https://go.dev/dl/go1.23.5.linux-amd64.tar.gz
-sudo  rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+nvm install --lts
 
 echo "Installing zen-browser and envycontrol..."
 echo "Press any key to continue..."
